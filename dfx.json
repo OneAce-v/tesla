@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "omega_backend": {
+      "main": "src/omega_backend/main.mo",
+      "type": "motoko"
+    },
+    "omega_frontend": {
+      "dependencies": [
+        "omega_backend"
+      ],
+      "source": [
+        "src/omega_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "omega_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
